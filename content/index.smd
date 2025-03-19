@@ -1,0 +1,10 @@
+---
+.title = "Home",
+.date = @date("2020-07-06T00:00:00"),
+.author = "@renerocksai",
+.layout = "index.shtml",
+.draft = false,
+---
+
+># [Please note]($block.attrs('info'))
+>_Coming soon..._
