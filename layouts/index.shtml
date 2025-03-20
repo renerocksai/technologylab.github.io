@@ -19,7 +19,7 @@
 
     .profile-pic {
       border-radius: 50%;
-      border: 5px solid lightblue;
+      /*border: 5px solid lightblue;*/
       margin-top: 1rem;
     }
   </style>
@@ -41,7 +41,7 @@
       </a>
     </div>
     <h3 style="margin-top:0;"><br>
-      <img src="$site.asset('reneglasses.png').link()" height=200  class="profile-pic"></h3>
+      <img src="$site.asset('glasses.png').link()" height=200  class="profile-pic"></h3>
     <div id="page" :html="$page.content()"></div>
   </div>
 </div>
