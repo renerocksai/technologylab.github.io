@@ -1,0 +1,74 @@
+---
+.title = "Allgemeine Geschäftsbedingungen (AGB)",
+.date = @date("2018-10-08T00:00:00"),
+.author = "renerocksai",
+.layout = "post.shtml",
+.draft = false,
+---
+
+**AI Research & Technology Lab GmbH (in Gründung)**
+Strasse
+A-2340 Mödling
+[https://technologylab.ai](https://technologylab.ai)
+[mailto:rene@technologylab.ai](rene@technologylab.ai)
+
+---
+
+## 1. Geltungsbereich
+
+Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Angebote, Verträge und Leistungen im Zusammenhang mit der Entwicklung und Lieferung von Softwarelösungen, insbesondere im Bereich künstlicher Intelligenz, Dialogsysteme und Webanwendungen.
+
+Sie umfassen auch Leistungen im Zusammenhang mit:
+- der Entwicklung technischer Prototypen,
+- der Unterstützung von Forschungsprojekten,
+- sowie der Planung und Durchführung themenbezogener Veranstaltungen,
+
+insbesondere im Bereich Künstlicher Intelligenz und Labor-Technologien.
+
+## 2. Vertragsabschluss
+
+Ein Vertrag kommt durch schriftliche Annahme eines Angebots oder durch Beauftragung per E-Mail zustande. Alle Angebote sind, sofern nicht anders angegeben, 30 Tage gültig.
+
+## 3. Leistungsumfang
+
+Der konkrete Leistungsumfang ergibt sich aus dem jeweiligen Angebot. Änderungswünsche während der Umsetzung können gegen Aufpreis berücksichtigt werden, sofern sie den Projektzeitplan nicht wesentlich gefährden.
+
+## 4. Preise und Zahlungsbedingungen
+
+Alle angegebenen Preise verstehen sich exklusive Umsatzsteuer (netto in EUR). Rechnungen sind innerhalb von 14 Tagen nach Erhalt ohne Abzug fällig. Bei Zahlungsverzug gelten die gesetzlichen Verzugszinsen.
+
+## 5. Mitwirkungspflichten des Auftraggebers
+
+Der Auftraggeber verpflichtet sich, notwendige Informationen, Zugangsdaten und Ressourcen rechtzeitig bereitzustellen, um eine ordnungsgemäße Leistungserbringung zu ermöglichen.
+
+## 6. Nutzungsrechte
+
+Sofern nicht anders vereinbart, erhält der Auftraggeber ein einfaches, zeitlich unbegrenztes Nutzungsrecht an der entwickelten Software. Eine Weitergabe an Dritte ist nur mit ausdrücklicher Zustimmung gestattet. Der vollständige Quellcode wird zur Verfügung gestellt, sofern dies im Angebot vorgesehen ist.
+
+## 7. Gewährleistung und Haftung
+
+Es gilt die gesetzliche Gewährleistungspflicht. Für Schäden wird nur gehaftet, wenn diese vorsätzlich oder grob fahrlässig verursacht wurden. Eine Haftung für mittelbare Schäden oder entgangenen Gewinn ist ausgeschlossen.
+
+## 8. Vertraulichkeit und Datenschutz
+
+Beide Parteien verpflichten sich zur Vertraulichkeit über alle nicht öffentlich bekannten Informationen. Die Einhaltung der geltenden Datenschutzgesetze (insb. DSGVO) wird zugesichert.
+
+## 9. Schlussbestimmungen
+
+Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen unberührt. Es gilt österreichisches Recht. Gerichtsstand ist Mödling, sofern gesetzlich zulässig.
+
+## 10. Wartung und Support
+
+Sofern im Angebot vereinbart, umfasst die Wartung regelmäßige Funktionstests, kleinere Anpassungen sowie Fehlerbehebungen. Der Umfang ergibt sich aus dem jeweiligen Angebot oder Vertrag.
+
+Supportleistungen (z. B. bei technischen Rückfragen oder bei Bedienungsproblemen) sind während der folgenden Zeiten verfügbar:
+
+**Supportzeiten:** Montag bis Freitag, 09:00 – 17:00 Uhr (MEZ), ausgenommen gesetzliche Feiertage in Österreich.
+
+Supportanfragen werden in der Regel innerhalb von **2 Werktagen** beantwortet.
+
+## 11. Verwendung von Open-Source-Komponenten
+
+Bei der Entwicklung können Open-Source-Komponenten zum Einsatz kommen, die unter anerkannten Lizenzen (z. B. MIT, Apache 2.0, BSD) stehen. Diese Komponenten werden dokumentiert, und ihre Lizenzen sind für den Auftraggeber einsehbar.
+
+Der Auftraggeber erkennt an, dass für diese Komponenten **keine exklusiven Rechte** eingeräumt werden können und dass ggf. Lizenzbedingungen Dritter gelten. Die Einhaltung dieser Lizenzbedingungen obliegt dem Auftragnehmer im Rahmen der Entwicklung und dem Auftraggeber bei Weiterverwendung.
