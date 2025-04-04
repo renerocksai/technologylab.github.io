@@ -6,8 +6,12 @@
 .draft = false,
 ---
 
+
 ># [Please note]($block.attrs('info'))
 >_Coming soon..._
 
+
 In the meantime, check out my [personal website](https://renerocks.ai) if you
 like.
+
+

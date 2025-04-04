@@ -1,6 +1,112 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  /* Explicitly set row direction for nav */
+  align-items: center;
+  width: 100%;
+  min-height: 56px;
+  position: relative;
+  border-bottom: 1px solid #444444;
+
+
+  padding: 1rem;
+  /* Added for some breathing room */
+}
+
+.navleft {
+  flex-shrink: 0;
+  /* Prevents navleft from shrinking */
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+
+  white-space: nowrap;
+  /* Prevents navleft text from wrapping */
+}
+
+.spacer {
+  flex-grow: 1;
+  /* Allows the spacer to take up available space */
+}
+
+/* Prevent overlap by setting a minimum left boundary */
+.menu::before {
+  content: '';
+  display: block;
+  width: 0;
+  margin-left: calc(-50% + 500px);
+  /* Adjust 200px based on navleft width */
+  pointer-events: none;
+  /* Ensures this doesn't interfere with clicks */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  /* Centers the menu items horizontally */
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Offsets by half its width */
+  min-width: 0;
+  /* Allows menu to shrink if needed */
+  flex-wrap: nowrap;
+  /* Keeps items in a single row by default */
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    padding: 0.5rem;
+    position: static;
+    /* Remove relative positioning on mobile */
+    height: auto;
+    /* Allow nav to expand with content */
+  }
+
+  .navleft {
+    margin-bottom: 0.5rem;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    /* Normal flow for mobile */
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .menu::before {
+    display: none;
+    /* No need for this in vertical mode */
+  }
+
+  .menu a {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Ensure content below nav isn't overlapped */
+body>*:not(nav) {
+  margin-top: 1rem;
+  /* Adds space after nav for other content */
+}
+
 ol {
   list-style-position: outside;
-  padding-left: 0;
+  padding-left: 1em;
 }
 
 ul {
@@ -69,9 +175,11 @@ html {
 }
 
 #content {
-  max-width: 42rem;
+  /*max-width: 42rem;*/
+  max-width: 60rem;
   width: 100vw;
-  padding: 2.625rem 1.3125rem;
+  /*padding: 2.625rem 1.3125rem;*/
+  padding: 1rem 1.3125rem;
 }
 
 div.highlight {
@@ -82,7 +190,7 @@ pre>code {
   border: none;
   padding: 15px;
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.3em !important;
   display: inline-block;
   box-sizing: border-box;
@@ -101,9 +209,24 @@ pre {
 
 code {
   border-radius: 4px;
-  border: 1px solid #d3d3d3;
+  /*border: 1px solid #d3d3d3;*/
   padding: 3px;
-  font-size: 1.1em;
+  /*font-size: 1.1em;*/
+  background-color: #1E1E1E !important;
+}
+
+navleft,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  code {
+    background-color: #6e6e6e00 !important;
+    /*color: white;*/
+  }
 }
 
 blockquote {
@@ -146,13 +269,21 @@ blockquote p {
 }
 
 @media (prefers-color-scheme:dark) {
+  pre {
+    color: white;
+  }
+
   code {
     color: white;
   }
 
+  nav {
+    background-color: #101010;
+  }
+
   body {
     background: #111;
-    color: #bbb
+    color: #bbb;
   }
 
   h1,
@@ -222,6 +353,7 @@ blockquote p {
     color: #bbb
   }
 }
+
 
 .highlight {
   background-color: #1E1E1E;

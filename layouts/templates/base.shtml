@@ -26,6 +26,22 @@
     <super>
   </head>
   <body>
+    <nav>
+      <div class="navleft noupper">
+        AI Research & Technology Lab
+      </div>
+      <div class="spacer"></div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="$site.page('blog').link()">Blog</a>
+        <a href="$site.page('projects').link()">Projects</a>
+        <a href="$site.page('about').link()">About</a>
+        <a href="https://github.com/renerocksai" target="_blank">
+          GitHub
+        </a>
+      </div>
+      <div class="spacer"></div>
+    </nav>
     <div id="content">
       <super>
     </div>
