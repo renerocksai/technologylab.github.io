@@ -57,19 +57,52 @@ nav {
 
 }
 
+.menu a {
+  text-decoration: none;
+  color: #8bc2e7;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  /* Slight scale up */
+  color: #a8d5f0;
+  /* Brighter blue */
+  text-decoration: underline;
+
+}
+
+.hamburger {
+  display: none;
+  /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #8bc2e7;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0.5rem;
-    position: static;
+    position: relative;
     /* Remove relative positioning on mobile */
     height: auto;
     /* Allow nav to expand with content */
+    justify-content: space-between;
+    /* Align navleft and hamburger */
   }
 
   .navleft {
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
+    margin-bottom: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    /* Show hamburger on mobile */
   }
 
   .spacer {
@@ -77,13 +110,29 @@ nav {
   }
 
   .menu {
-    position: static;
-    /* Normal flow for mobile */
+    display: none;
+    /* Hidden by default on mobile */
+    position: absolute;
+    top: 100%;
+    /* Below nav */
+    right: 0;
+    left: auto;
     transform: none;
+    width: auto;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    gap: 0.5rem;
+    background-color: #222222b0;
+    /* Match nav background */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    /* Optional shadow */
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .menu.active {
+    display: flex;
+    /* Show when toggled */
   }
 
   .menu::before {
@@ -95,6 +144,20 @@ nav {
     padding: 0.5rem;
     width: 100%;
     text-align: center;
+  }
+
+  /* Hover effect for mobile (if supported) */
+  .menu a:hover {
+    /* Slight scale up */
+    color: #a8d5f0;
+    /* Brighter blue */
+    text-decoration: underline;
+
+  }
+
+  /* Remove the dots between links in vertical mode */
+  .menu>span {
+    display: none;
   }
 }
 

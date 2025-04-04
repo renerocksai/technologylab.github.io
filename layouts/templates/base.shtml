@@ -31,6 +31,10 @@
         AI Research & Technology Lab
       </div>
       <div class="spacer"></div>
+      <button class="hamburger" aria-label="Toggle menu">
+         &#9776;
+        <!-- Unicode for hamburger icon (☰) -->
+      </button>
       <div class="menu">
         <a href="/">Home</a>
         <a href="$site.page('blog').link()">Blog</a>
@@ -48,5 +52,11 @@
     <footer id="footer">
       <super>
     </footer>
+    <script>
+      document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('active');
+        console.log("CLICK");
+    });
+    </script>
   </body>
 </html>
