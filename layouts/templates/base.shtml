@@ -28,7 +28,7 @@
   <body>
     <nav>
       <div class="navleft noupper">
-        AI Research & Technology Lab
+        <a href="https://technologylab.ai">AI Research & Technology Lab</a>
       </div>
       <div class="spacer"></div>
       <button class="hamburger" aria-label="Toggle menu">
