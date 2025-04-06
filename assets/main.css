@@ -57,9 +57,9 @@ nav {
 
 }
 
-.menu a {
+nav .menu a {
   text-decoration: none;
-  color: #8bc2e7;
+  color: #0000EE;
   white-space: nowrap;
 }
 
@@ -148,9 +148,8 @@ nav {
 
   /* Hover effect for mobile (if supported) */
   .menu a:hover {
-    /* Slight scale up */
-    color: #a8d5f0;
     /* Brighter blue */
+    color: #a8d5f0;
     text-decoration: underline;
 
   }
@@ -331,6 +330,31 @@ blockquote p {
   color: #606060;
 }
 
+
+.noupper {
+  font-family: 'Merriweather', serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  span,
+  a {
+    color: white;
+    color: #0000EE;
+    text-decoration: none;
+  }
+
+   a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (prefers-color-scheme:dark) {
   pre {
     color: white;
@@ -414,6 +438,23 @@ blockquote p {
 
   .toc a {
     color: #bbb
+  }
+
+  .noupper {
+    font-family: 'Merriweather', serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+
+    span,
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -670,19 +711,3 @@ video {
 }
 
 
-.noupper {
-  font-family: 'Merriweather', serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-
-  span,
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-}
