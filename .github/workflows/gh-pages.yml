@@ -5,7 +5,7 @@ on:
   push:
     branches: ["master"]
   # also, allow manual deployment
-  workflow-dispatch:
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
