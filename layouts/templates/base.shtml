@@ -40,7 +40,7 @@
         <a href="$site.page('blog').link()">Blog</a>
         <a href="$site.page('projects').link()">Projects</a>
         <a href="$site.page('about').link()">About</a>
-        <a href="https://github.com/renerocksai" target="_blank">
+        <a href="https://github.com/technologylab-ai" target="_blank">
           GitHub
         </a>
       </div>

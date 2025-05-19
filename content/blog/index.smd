@@ -6,6 +6,6 @@
 .draft = false,
 ---
 
-># [_Coming soon..._]($block.attrs('info'))
+> Coming soon...
 > In the meantime, check out my [personal blog](https://renerocks.ai/blog/) if
 > you like.

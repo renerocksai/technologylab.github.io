@@ -1,11 +1,20 @@
 ---
 .title = "About us",
-.date = @date("2018-10-08T00:00:00"),
+.date = @date("2025-03-20:00:00"),
 .author = "renerocksai",
 .layout = "post.shtml",
 .draft = false,
 ---
 
-># [Please note]($block.attrs('info'))
 >_Coming soon..._
 
+
+### Imprint / Impressum
+
+```
+Name              : AI Research & Technology Lab GmbH
+Rechtsform        : Gesellschaft mit beschränkter Haftung
+Sitz              : Enzersdorfer Straße 25, A-2340 Mödling
+Firmenbuchnummer  : FN 652800a
+Firmenbuchgericht : Landesgericht Wr. Neustadt
+```

@@ -35,11 +35,14 @@
 <footer id="footer">
   <small class="noupper" style="color:#606060;font-weight:normal;">
      &copy; in 2025 by &nbsp;
-    <a href="https://x.com/renerocksai" target="_blank">AI Research & Technology Lab</a>
+    <a href="https://technologylab.ai" target="_blank">AI Research & Technology Lab GmbH</a>
     —
     <i>made with &nbsp;
       <a href="https://zine-ssg.io" target="_blank">
         Zine
       </a></i>
+    <div style="text-align: center">
+    <i>We don't use cookies! You're welcome.</i>
+    </div>
   </small>
 </footer>
