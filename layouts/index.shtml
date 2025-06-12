@@ -34,15 +34,16 @@
 </div>
 <footer id="footer">
   <small class="noupper" style="color:#606060;font-weight:normal;">
-     &copy; in 2025 by &nbsp;
+     &copy; in 2025 by
     <a href="https://technologylab.ai" target="_blank">AI Research & Technology Lab GmbH</a>
-    —
-    <i>made with &nbsp;
-      <a href="https://zine-ssg.io" target="_blank">
-        Zine
-      </a></i>
     <div style="text-align: center">
-    <i>We don't use cookies! You're welcome.</i>
+      <i>We don't use cookies! You're welcome.</i>
+    </div>
+    <div style="text-align: center">
+      <i>Made with
+        <a href="https://zine-ssg.io" target="_blank">
+          Zine
+        </a></i>
     </div>
   </small>
 </footer>
