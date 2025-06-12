@@ -9,7 +9,7 @@ nav {
   border-bottom: 1px solid #444444;
 
 
-  padding: 1rem;
+  padding: 0.5rem;
   /* Added for some breathing room */
 }
 
@@ -715,4 +715,17 @@ video {
 .menu-small a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+.navbar-logo {
+    display: flex;
+    height: 3rem;
 }

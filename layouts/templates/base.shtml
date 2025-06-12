@@ -27,8 +27,12 @@
   </head>
   <body>
     <nav>
+        <a href="https://technologylab.ai">
+         <img src="$site.host_url.addPath($site.asset('techlab-logo.png').link())" alt="Logo" class="navbar-logo">
+         </a>
       <div class="navleft noupper" style="z-index: 10">
-        <a href="https://technologylab.ai">AI Research & Technology Lab</a>
+        <a href="https://technologylab.ai">
+        AI Research & Technology Lab</a>
       </div>
       <div class="spacer"></div>
       <button class="hamburger" aria-label="Toggle menu">
