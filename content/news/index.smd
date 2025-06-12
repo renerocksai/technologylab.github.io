@@ -1,5 +1,5 @@
 ---
-.title = "Blog",
+.title = "News",
 .date = @date("2025-03-19T00:00:00"),
 .author = "renerocksai",
 .layout = "collection.shtml",

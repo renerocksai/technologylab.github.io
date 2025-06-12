@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="AI Research & Technology Lab">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@renerocksai">
+    <meta name="twitter:site" content="AI Research & Technology Lab">
     <meta name="twitter:author" content="@renerocksai">
     <meta name="twitter:description" content="AI Research & Technology Lab">
     <meta name="twitter:title" content="$page.title.suffix(' | technologylab.ai')">
@@ -37,8 +37,7 @@
       </button>
       <div class="menu">
         <a href="/">Home</a>
-        <a href="$site.page('blog').link()">Blog</a>
-        <a href="$site.page('projects').link()">Projects</a>
+        <a href="$site.page('news').link()">News</a>
         <a href="$site.page('about').link()">About</a>
         <a href="https://github.com/technologylab-ai" target="_blank">
           GitHub
