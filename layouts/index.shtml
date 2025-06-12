@@ -28,8 +28,9 @@
       margin-bottom: 2rem;
     }
   </style>
-  <h3 style="margin-top:0;"><br>
-    <img src="$site.asset('techlab-logo.png').link()" height=200  class="profile-pic"></h3>
+  <h3 style="margin-top:0;">
+    <img src="$site.asset('techlab-logo.png').link()" height=300  class="profile-pic">
+  </h3>
   <div id="page" :html="$page.content()"></div>
 </div>
 <footer id="footer">
