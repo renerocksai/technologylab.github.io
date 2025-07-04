@@ -32,7 +32,7 @@
     <div>
       <img src="$site.asset('techlab-logo.png').link()" height=300  class="profile-pic">
     </div>
-    <h3 style="margin-top: -1em;"><i>Advanced AI Systems • Custom Lab Solutions • Expert Engineering</i></h3>
+    <h3 style="margin-top: 0;"><i>Advanced AI Systems • Custom Lab Solutions • Expert Engineering</i></h3>
   </div>
   <div id="page" :html="$page.content()"></div>
 </div>
