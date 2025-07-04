@@ -25,12 +25,15 @@
     .profile-pic {
       border-radius: 50%;
       /*border: 5px solid lightblue;*/
-      margin-bottom: 2rem;
+      /* margin-bottom: 2rem; */
     }
   </style>
-  <h3 style="margin-top:0;">
-    <img src="$site.asset('techlab-logo.png').link()" height=300  class="profile-pic">
-  </h3>
+  <div style="text-align: center; margin-bottom: 4rem;">
+    <div>
+      <img src="$site.asset('techlab-logo.png').link()" height=300  class="profile-pic">
+    </div>
+    <h3 style="margin-top: -1em;"><i>Advanced AI Systems • Custom Lab Solutions • Expert Engineering</i></h3>
+  </div>
   <div id="page" :html="$page.content()"></div>
 </div>
 <footer id="footer">
