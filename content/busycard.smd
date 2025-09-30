@@ -1,0 +1,8 @@
+---
+.title = "Rene Schallner",
+.date = @date("2025-09-30:00:00"),
+.author = "renerocksai",
+.layout = "busycard.shtml",
+.draft = false,
+---
+
