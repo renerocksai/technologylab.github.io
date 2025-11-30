@@ -1,33 +1,72 @@
 ---
-.title = "About us",
-.date = @date("2025-03-20:00:00"),
+.title = "About AI Research & Technology Lab",
+.date = @date("2025-03-20T00:00:00"),
 .author = "renerocksai",
-.layout = "post.shtml",
+.layout = "page.shtml",
 .draft = false,
+.custom = {
+    "show_contact_cta": true,
+},
 ---
 
+## What we do
 
-At **AI Research & Technology Lab GmbH**, we're dedicated to **enabling
-pioneering research projects** through advanced technology development. Our
-core work involves **developing sophisticated AI solutions**, spanning the full
-spectrum from creating crucial tools for cutting-edge research experiments to
-building robust, production-grade commercial applications like AI agents. A key
-area of expertise includes **human-robot interaction (HRI) systems**,
-exemplified by developing the **AI 'brain' for the social robot Willi**, who
-interviews visitors at an innovation lab _([link to news article will follow
-soon])_. Our commitment to research extends to **creating custom hardware and
-software solutions for lab environments**, including capabilities like precise
-sensor synchronization. A steadfast dedication to **expert engineering**
-underlies every project, ensuring uncompromising quality, correctness, and
-performance in all
-deliverables.
+At **AI Research & Technology Lab GmbH**, we enable pioneering research projects through advanced technology development. We work with research institutes and innovative companies to build **AI systems that turn data and ideas into decisions and experiments** – not just demos.
 
-### Imprint / Impressum
+Our work ranges from **AI decision systems** that sit on top of existing dashboards and data warehouses, to **AI-powered experiment and lab platforms** that make complex studies actually runnable in practice.
 
-```
-Name              : AI Research & Technology Lab GmbH
-Rechtsform        : Gesellschaft mit beschränkter Haftung
-Sitz              : Enzersdorfer Straße 25, A-2340 Mödling
-Firmenbuchnummer  : FN 652800a
-Firmenbuchgericht : Landesgericht Wr. Neustadt
-```
+**You already have dashboards, metrics, and reports; we build the AI systems that can use them to run structured what-if scenarios and support real decisions.**
+
+---
+
+## AI decision systems for real-world decisions
+
+Many organisations already track everything: KPIs, funnels, survey results, experiment outcomes. What's missing is a **decision layer**: a system that can query this data on demand, run structured "what-if" scenarios, and surface recommendations a human can actually act on.
+
+We design and build **AI decision systems** that:
+
+- connect to your existing tools and data sources via well-defined APIs,
+- run controlled **tool-using agents** that stay within guardrails,
+- produce **traceable briefings** instead of opaque answers, and
+- keep a **decision and reasoning log** so experiments and decisions can be audited or revisited later.
+
+This makes it possible to move from "we have dashboards" to **"we have AI that helps us decide what to do next."**
+
+---
+
+## Experiment & lab platforms
+
+A core focus of the lab is building **AI-powered experimental systems** for social science, HRI, and human-AI interaction research.
+
+Examples include:
+
+- **Social robot interviewers** – such as the AI "brain" for *Willi*, a social robot that interviews visitors at an innovation lab (public write-up will follow).
+- **Multi-module online experiments** – where one system coordinates shopping assistants, chat-based interviewers, and survey components into a single study flow.
+- **Custom lab tooling** – including precise **sensor synchronization**, logging infrastructure, and control software that ties together robots, screens, sensors, and backends.
+
+Behind each visible system is a set of **enabling technologies**: domain models, tool APIs, simulators, and experiment logic that make studies **repeatable, adaptable, and analysable** instead of one-off prototypes.
+
+---
+
+## Expert engineering as a foundation
+
+Under everything we build is a commitment to **expert engineering**:
+
+- **Correctness and reliability** – tested components, careful treatment of edge cases, and clear contracts between systems.
+- **Performance where it matters** – from low-level Zig/C/C++ components to efficient Python backends and streaming interfaces.
+- **Reproducibility** – versioned infrastructure, experiment configurations, and data pipelines so results can be revisited and extended.
+- **Long-term maintainability** – code and systems that can be handed over to in-house teams, not black boxes.
+
+This combination of **research awareness** and **engineering discipline** allows the lab to take on projects that sit between a research prototype and a production system – exactly where many ambitious AI and HRI experiments live.
+
+---
+
+## Working with the lab
+
+We typically collaborate with:
+
+- research groups running complex online or lab experiments,
+- innovation labs exploring new forms of human-AI interaction, and
+- organisations that already have serious data and dashboards, but need an AI layer that **helps them decide and experiment**, not just chat.
+
+If you're planning a project that needs **AI decision systems**, **experiment platforms**, or **custom lab infrastructure**, we're happy to explore whether it's a good fit for the lab.

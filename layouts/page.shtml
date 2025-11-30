@@ -1,0 +1,22 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<main id="content">
+  <section class="content-page">
+    <div class="page-header">
+      <h1 class="page-title" :text="$page.title"></h1>
+      <div class="page-meta">
+        <span :text="$page.date.format('January 02, 2006')"></span>
+      </div>
+    </div>
+    <article class="page-content" :html="$page.content()">
+    </article>
+    <div class="page-cta" :if="$page.custom.get?('show_contact_cta')">
+      <a href="/contact/" class="btn btn-primary">
+        Contact the lab
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+</main>
+<footer id="footer"></footer>

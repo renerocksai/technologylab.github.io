@@ -1,0 +1,97 @@
+<extend template="base.shtml">
+<title id="title">Home</title>
+<head id="head"></head>
+<main id="content">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-content">
+        <div class="hero-kicker">
+          <span class="hero-kicker-dot"></span>
+          <span :text="$page.custom.get('hero_kicker')"></span>
+        </div>
+        <h1 class="hero-title">
+          <span :text="$page.custom.get('hero_title')"></span>
+        </h1>
+        <p class="hero-intro" :html="$page.custom.get('hero_intro')"></p>
+        <p class="hero-bold" :text="$page.custom.get('hero_bold')"></p>
+        <div class="hero-actions">
+          <a href="$page.custom.get('hero_cta_primary_link')" class="btn btn-primary">
+            <span :text="$page.custom.get('hero_cta_primary')"></span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="$page.custom.get('hero_cta_secondary_link')" class="btn btn-secondary">
+            <span :text="$page.custom.get('hero_cta_secondary')"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <aside class="card-under-construction">
+        <div>
+          <div class="card-pill">
+            <span class="card-pill-dot"></span>
+            <span :text="$page.custom.get('sidebar_pill')"></span>
+          </div>
+          <h2 class="card-title" :text="$page.custom.get('sidebar_title')"></h2>
+          <p class="card-body" :text="$page.custom.get('sidebar_body_1')"></p>
+          <p class="card-body" :text="$page.custom.get('sidebar_body_2')"></p>
+        </div>
+        <div class="card-footer">
+          <a href="$page.custom.get('sidebar_cta_link')" class="btn btn-ghost" target="_blank">
+            <span :text="$page.custom.get('sidebar_cta')"></span>
+            <span class="arrow">&nearr;</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-title" :text="$page.custom.get('features_title')"></div>
+      <div class="section-subtitle" :text="$page.custom.get('features_subtitle')"></div>
+    </div>
+
+    <div class="feature-grid">
+      <!-- Feature 1 -->
+      <article class="feature-card">
+        <div class="feature-content">
+          <div class="feature-label" :text="$page.custom.get('feature_1_label')"></div>
+          <h3 class="feature-title" :text="$page.custom.get('feature_1_title')"></h3>
+          <div class="feature-subtitle" :text="$page.custom.get('feature_1_subtitle')"></div>
+          <p class="feature-body" :html="$page.custom.get('feature_1_body')"></p>
+        </div>
+      </article>
+
+      <!-- Feature 2 -->
+      <article class="feature-card">
+        <div class="feature-content">
+          <div class="feature-label" :text="$page.custom.get('feature_2_label')"></div>
+          <h3 class="feature-title" :text="$page.custom.get('feature_2_title')"></h3>
+          <div class="feature-subtitle" :text="$page.custom.get('feature_2_subtitle')"></div>
+          <p class="feature-body" :html="$page.custom.get('feature_2_body')"></p>
+          <p class="feature-body" :html="$page.custom.get('feature_2_body_2')"></p>
+        </div>
+      </article>
+
+      <!-- Feature 3 -->
+      <article class="feature-card">
+        <div class="feature-content">
+          <div class="feature-label" :text="$page.custom.get('feature_3_label')"></div>
+          <h3 class="feature-title" :text="$page.custom.get('feature_3_title')"></h3>
+          <div class="feature-subtitle" :text="$page.custom.get('feature_3_subtitle')"></div>
+          <p class="feature-body" :html="$page.custom.get('feature_3_body')"></p>
+          <ul class="feature-list">
+            <li :text="$page.custom.get('feature_3_list_1')"></li>
+            <li :text="$page.custom.get('feature_3_list_2')"></li>
+            <li :text="$page.custom.get('feature_3_list_3')"></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer id="footer"></footer>

@@ -1,0 +1,25 @@
+---
+.title = "Contact",
+.date = @date("2025-11-30T00:00:00"),
+.author = "renerocksai",
+.layout = "page.shtml",
+.draft = false,
+---
+
+## Get in Touch
+
+For inquiries about AI decision systems, experiment platforms, or collaboration opportunities:
+
+**Email:** [rene@technologylab.ai](mailto:rene@technologylab.ai)
+
+---
+
+## Imprint / Impressum
+
+```
+Name              : AI Research & Technology Lab GmbH
+Rechtsform        : Gesellschaft mit beschränkter Haftung
+Sitz              : Enzersdorfer Straße 25, A-2340 Mödling
+Firmenbuchnummer  : FN 652800a
+Firmenbuchgericht : Landesgericht Wr. Neustadt
+```

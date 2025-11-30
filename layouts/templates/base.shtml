@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head id="head">
     <meta charset="UTF-8">
-    <meta name="description" content="AI Research & Technology Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AI Research & Technology Lab - AI decision systems, experiment platforms, and expert engineering">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="AI Research & Technology Lab">
     <meta name="twitter:author" content="@renerocksai">
-    <meta name="twitter:description" content="AI Research & Technology Lab">
+    <meta name="twitter:description" content="AI Research & Technology Lab - AI systems that turn data and ideas into decisions and experiments">
     <meta name="twitter:title" content="$page.title.suffix(' | technologylab.ai')">
     <meta name="twitter:image" content="$site.host_url.addPath($site.asset('techlab-logo-notext.png').link())">
     <meta property="og:type" content="website">
     <meta property="og:title" content="$page.title.suffix(' | technologylab.ai')">
     <meta property="og:image" content="$site.host_url.addPath($site.asset('techlab-logo-notext.png').link())">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/svg+xml" href="$site.asset('favicon.svg').link()">
+    <link rel="icon" type="image/png" sizes="48x48" href="$site.asset('favicon-48x48.png').link()">
+    <link rel="apple-touch-icon" sizes="180x180" href="$site.asset('apple-touch-icon.png').link()">
+    <link rel="manifest" href="$site.asset('site.webmanifest').link()">
     <title id="title">
       <super>
       - technologylab.ai
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="$site.asset('main.css').link()">
-    <link rel="stylesheet" type="text/css" href="$site.asset('highlight.css').link()">
+    <link rel="stylesheet" type="text/css" href="$site.asset('theme.css').link()">
     <super>
   </head>
   <body>
-    <nav>
-        <a href="https://technologylab.ai">
-         <img src="$site.host_url.addPath($site.asset('techlab-logo-notext.png').link())" alt="Logo" class="navbar-logo">
-         </a>
-      <div class="navleft noupper" style="z-index: 10">
-        <a href="https://technologylab.ai">
-        AI Research & Technology Lab</a>
-      </div>
-      <div class="spacer"></div>
-      <button class="hamburger" aria-label="Toggle menu">
-         &#9776;
-        <!-- Unicode for hamburger icon (☰) -->
-      </button>
-      <div class="menu">
-        <a href="/">Home</a>
-        <a href="$site.page('news').link()">News</a>
-        <a href="$site.page('about').link()">About</a>
-        <a href="https://github.com/technologylab-ai" target="_blank">
-          GitHub
+    <div class="page-wrap">
+      <header>
+        <a href="/" class="brand">
+          <div class="brand-logo">
+            <img src="$site.asset('techlab-logo.png').link()" alt="AI Research & Technology Lab logo">
+          </div>
+          <div class="brand-text">
+            <div class="brand-name">AI Research & Technology Lab GmbH</div>
+            <div class="brand-tagline">AI Decision Systems &bull; Experiment & Lab Platforms &bull; Expert Engineering</div>
+          </div>
         </a>
-      </div>
-      <div class="spacer"></div>
-    </nav>
-    <div id="content">
-      <super>
+        <nav>
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="$site.page('news').link()">News</a>
+          <a class="nav-link" href="$site.page('about').link()">About</a>
+          <a class="nav-link" href="$site.page('contact').link()">Contact</a>
+          <a class="nav-link" href="https://github.com/technologylab-ai" target="_blank">GitHub</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon-light">&#9728;</span>
+            <span class="theme-icon-dark">&#9790;</span>
+          </button>
+        </nav>
+      </header>
+
+      <main id="content">
+        <super>
+      </main>
+
+      <footer id="footer">
+        <span>&copy; AI Research & Technology Lab GmbH</span>
+        <a href="$site.page('agb').link()">AGB</a>
+        <super>
+      </footer>
     </div>
-    <footer id="footer">
-      <super>
-    </footer>
+
     <script>
-      document.querySelector('.hamburger').addEventListener('click', function() {
-        document.querySelector('.menu').classList.toggle('active');
-        console.log("CLICK");
-    });
+      // Theme initialization (runs immediately)
+      (function() {
+        var html = document.documentElement;
+        var saved = localStorage.getItem('theme');
+        if (saved) {
+          html.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          html.setAttribute('data-theme', 'light');
+        }
+      })();
+
+      // Theme toggle handler
+      var toggle = document.querySelector('.theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var html = document.documentElement;
+          var current = html.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      }
     </script>
   </body>
 </html>
