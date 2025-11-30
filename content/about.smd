@@ -36,13 +36,13 @@ This makes it possible to move from "we have dashboards" to **"we have AI that h
 
 ## Experiment & lab platforms
 
-A core focus of the lab is building **AI-powered experimental systems** for social science, HRI, and human-AI interaction research.
+A core focus of the lab is building **AI-powered experimental systems** for social science, human-robot, and human-AI interaction research.
 
 Examples include:
 
-- **Social robot interviewers** – such as the AI "brain" for *Willi*, a social robot that interviews visitors at an innovation lab (public write-up will follow).
+- **Social robot interviewers** – the complete system behind *Willi*, a social robot that interviews visitors at an innovation lab: on-robot AI skill, backend, tablet app, and management tools.
 - **Multi-module online experiments** – where one system coordinates shopping assistants, chat-based interviewers, and survey components into a single study flow.
-- **Multi LLM automated classification of text survey responses** – learning from human feedback.
+- **Multi-LLM pipelines for automated classification of text survey responses** – with human reconciliation on disagreement and continuous learning from that feedback.
 - **Custom lab tooling** – including precise **sensor synchronization**, logging infrastructure, and control software that ties together robots, screens, sensors, and backends.
 
 Behind each visible system is a set of **enabling technologies**: domain models, tool APIs, simulators, and experiment logic that make studies **repeatable, adaptable, and analysable** instead of one-off prototypes.
@@ -56,7 +56,7 @@ Under everything we build is a commitment to **expert engineering**:
 - **Correctness and reliability** – tested components, careful treatment of edge cases, and clear contracts between systems.
 - **Performance where it matters** – from low-level Zig for performance-critical components to efficient Python backends and streaming interfaces.
 - **Reproducibility** – versioned infrastructure, experiment configurations, and data pipelines so results can be revisited and extended.
-- **Long-term maintainability** – code and systems that can be handed over to in-house teams, not black boxes.
+- **Long-term maintainability** – code and systems that can be handed over to in-house teams, no black boxes.
 
 This combination of **research awareness** and **engineering discipline** allows the lab to take on projects that sit between a research prototype and a production system – exactly where many ambitious AI and HRI experiments live.
 

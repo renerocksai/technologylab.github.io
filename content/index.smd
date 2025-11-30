@@ -33,7 +33,7 @@
     "feature_3_label": "03",
     "feature_3_title": "Expert Engineering",
     "feature_3_subtitle": "Robust foundations for ambitious projects",
-    "feature_3_body": "We treat every project as <strong>research-grade engineering</strong>: reproducible builds, versioned infrastructure, tested components, and careful performance work where it matters. This lets research institutes and companies run ambitious experiments without fragile prototypes.",
+    "feature_3_body": "We bring <strong>research-level rigor</strong> to every project: reproducible builds, versioned infrastructure, tested components, clear audit trails, and focused performance work where it matters – so research institutes and companies can run ambitious systems and experiments without fragile prototypes.",
     "feature_3_list_1": "Zig, Python, TypeScript/JavaScript",
     "feature_3_list_2": "Hardware + firmware + backend",
     "feature_3_list_3": "Measurement, observability and long-term maintainability",
