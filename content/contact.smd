@@ -2,16 +2,8 @@
 .title = "Contact",
 .date = @date("2025-11-30T00:00:00"),
 .author = "renerocksai",
-.layout = "page.shtml",
+.layout = "contact.shtml",
 .draft = false,
----
-
-## Get in Touch
-
-For inquiries about AI decision systems, experiment platforms, or collaboration opportunities:
-
-**Email:** [rene@technologylab.ai](mailto:rene@technologylab.ai)
-
 ---
 
 ## Imprint / Impressum

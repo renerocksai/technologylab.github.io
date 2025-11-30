@@ -34,7 +34,6 @@
             <span class="card-pill-dot"></span>
             <span :text="$page.custom.get('sidebar_pill')"></span>
           </div>
-          <h2 class="card-title" :text="$page.custom.get('sidebar_title')"></h2>
           <p class="card-body" :text="$page.custom.get('sidebar_body_1')"></p>
           <p class="card-body" :text="$page.custom.get('sidebar_body_2')"></p>
         </div>

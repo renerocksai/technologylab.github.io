@@ -13,7 +13,7 @@
 
 At **AI Research & Technology Lab GmbH**, we enable pioneering research projects through advanced technology development. We work with research institutes and innovative companies to build **AI systems that turn data and ideas into decisions and experiments** – not just demos.
 
-Our work ranges from **AI decision systems** that sit on top of existing dashboards and data warehouses, to **AI-powered experiment and lab platforms** that make complex studies actually runnable in practice.
+Our work ranges from **AI decision systems** that sit on top of existing dashboards and data sources, to **AI-powered experiment and lab platforms** that make complex studies actually runnable in practice.
 
 **You already have dashboards, metrics, and reports; we build the AI systems that can use them to run structured what-if scenarios and support real decisions.**
 
@@ -21,7 +21,7 @@ Our work ranges from **AI decision systems** that sit on top of existing dashboa
 
 ## AI decision systems for real-world decisions
 
-Many organisations already track everything: KPIs, funnels, survey results, experiment outcomes. What's missing is a **decision layer**: a system that can query this data on demand, run structured "what-if" scenarios, and surface recommendations a human can actually act on.
+Many organisations already track everything: KPIs, funnels, survey results, financial data. What's missing is a **decision layer**: a system that can query this data on demand, run structured "what-if" scenarios, and surface recommendations a human can actually act on.
 
 We design and build **AI decision systems** that:
 
@@ -42,6 +42,7 @@ Examples include:
 
 - **Social robot interviewers** – such as the AI "brain" for *Willi*, a social robot that interviews visitors at an innovation lab (public write-up will follow).
 - **Multi-module online experiments** – where one system coordinates shopping assistants, chat-based interviewers, and survey components into a single study flow.
+- **Multi LLM automated classification of text survey responses** – learning from human feedback.
 - **Custom lab tooling** – including precise **sensor synchronization**, logging infrastructure, and control software that ties together robots, screens, sensors, and backends.
 
 Behind each visible system is a set of **enabling technologies**: domain models, tool APIs, simulators, and experiment logic that make studies **repeatable, adaptable, and analysable** instead of one-off prototypes.
@@ -53,7 +54,7 @@ Behind each visible system is a set of **enabling technologies**: domain models,
 Under everything we build is a commitment to **expert engineering**:
 
 - **Correctness and reliability** – tested components, careful treatment of edge cases, and clear contracts between systems.
-- **Performance where it matters** – from low-level Zig/C/C++ components to efficient Python backends and streaming interfaces.
+- **Performance where it matters** – from low-level Zig for performance-critical components to efficient Python backends and streaming interfaces.
 - **Reproducibility** – versioned infrastructure, experiment configurations, and data pipelines so results can be revisited and extended.
 - **Long-term maintainability** – code and systems that can be handed over to in-house teams, not black boxes.
 

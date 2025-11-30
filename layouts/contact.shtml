@@ -1,0 +1,32 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<main id="content">
+  <section class="content-page">
+    <div class="page-header">
+      <h1 class="page-title" :text="$page.title"></h1>
+    </div>
+    <article class="page-content">
+      <h2>Get in Touch</h2>
+      <p>For inquiries about AI decision systems, experiment platforms, or collaboration opportunities:</p>
+      <p><strong>Email:</strong> <span id="contact-email"></span></p>
+      <hr>
+      <div :html="$page.content()"></div>
+    </article>
+  </section>
+  <script>
+  (function() {
+    var u = 'rene';
+    var d = 'technologylab.ai';
+    var e = u + '@' + d;
+    var el = document.getElementById('contact-email');
+    if (el) {
+      var a = document.createElement('a');
+      a.href = 'mailto:' + e;
+      a.textContent = e;
+      el.appendChild(a);
+    }
+  })();
+  </script>
+</main>
+<footer id="footer"></footer>

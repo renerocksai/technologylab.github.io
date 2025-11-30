@@ -474,7 +474,8 @@ nav {
 
 .card-body {
   font-size: 0.88rem;
-  color: var(--fg);
+  color: var(--fg-muted);
+  font-style: italic;
   line-height: 1.6;
   margin-bottom: 12px;
 }
@@ -483,6 +484,7 @@ nav {
   display: flex;
   justify-content: flex-start;
 }
+
 
 /* --------------------------------------------------------------------------
    9. Section / Feature Grid
@@ -632,12 +634,12 @@ hr.section-divider {
 }
 
 .page-content {
-  background: var(--feature-card-bg);
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  padding: 24px 22px 22px;
-  box-shadow: var(--shadow-soft);
-  font-size: 0.92rem;
+  background: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  font-size: 0.95rem;
   line-height: 1.7;
 }
 
@@ -729,12 +731,12 @@ hr.section-divider {
 }
 
 .about-content {
-  background: var(--feature-card-bg);
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  padding: 24px 22px 22px;
-  box-shadow: var(--shadow-soft);
-  font-size: 0.92rem;
+  background: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  font-size: 0.95rem;
   line-height: 1.7;
 }
 
@@ -850,11 +852,11 @@ hr.section-divider {
 }
 
 .post-content {
-  background: var(--feature-card-bg);
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  padding: 28px 26px;
-  box-shadow: var(--shadow-soft);
+  background: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  box-shadow: none;
   font-size: 0.95rem;
   line-height: 1.75;
 }
