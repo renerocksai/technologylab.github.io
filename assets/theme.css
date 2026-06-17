@@ -588,7 +588,12 @@ main {
   margin-top: 4px;
 }
 
+#projects {
+  scroll-margin-top: 64px;
+}
+
 .project-row {
+  scroll-margin-top: 88px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;

@@ -79,7 +79,7 @@
       </div>
 
       <div class="projects">
-        <article class="project-row">
+        <article class="project-row" id="qualcode">
           <div class="project-media">
             <video class="project-video" controls preload="none" playsinline
                    poster="$site.asset('qualcode-poster.webp').link()"
@@ -109,7 +109,7 @@
           </div>
         </article>
 
-        <article class="project-row project-row--reverse">
+        <article class="project-row project-row--reverse" id="labrowser">
           <div class="project-media">
             <video class="project-video" controls preload="none" playsinline
                    poster="$site.asset('labrowser-poster.webp').link()"
