@@ -1,0 +1,82 @@
+---
+.title = "Our approach",
+.date = @date("2025-03-20T00:00:00"),
+.author = "renerocksai",
+.layout = "page.shtml",
+.draft = false,
+.custom = {
+    "show_contact_cta": true,
+},
+---
+
+## What we do
+
+We work with research institutes and innovative companies to build **AI systems that turn data and ideas into decisions and experiments** – not demos. This page goes a level deeper than the homepage: how we approach each kind of project, and what we actually deliver.
+
+Our work spans **AI agents** that sit on top of existing dashboards and data sources, **AI-powered experiment and lab platforms** that make complex studies runnable in practice, and the **expert engineering** that holds both together.
+
+**You already have dashboards, metrics, and reports; we build the AI agents that use them – running structured what-if scenarios, producing the artefacts you need, and acting on real decisions.**
+
+---
+
+## Readiness is most of the work
+
+Agents only deliver when the organisation around them is ready: legible data, real APIs, and processes that aren't trapped in people's heads. Getting there is the hard part – and it's the part we handle, not a prerequisite you have to finish before calling us.
+
+We've written up how we get you there: **[readyforagents.ai](https://readyforagents.ai)**.
+
+---
+
+## AI agents for decisions and action
+
+Many organisations already track everything: KPIs, funnels, survey results, financial data. What's missing is an **agent layer**: a system that can query this data on demand, run structured "what-if" scenarios, and then act on the result instead of stopping at a suggestion.
+
+We design and build **AI agents** that:
+
+- connect to your existing tools and data sources via well-defined APIs,
+- run controlled **tool use** that stays within guardrails,
+- **act and produce artefacts** – briefings, reports, updated records – not just opaque answers, and
+- keep a **decision and reasoning log** so every step can be audited or revisited later.
+
+This makes it possible to move from "we have dashboards" to **"we have AI that can decide and act on what to do next."**
+
+---
+
+## Experiment & lab platforms
+
+A core focus of the lab is building **AI-powered experimental systems** for social science, human-robot, and human-AI interaction research.
+
+Examples include:
+
+- **Social robot interviewers** – the complete system behind *Willi*, a social robot that interviews visitors at an innovation lab: on-robot AI skill, backend, tablet app, and management tools.
+- **Multi-module online experiments** – where one system coordinates shopping assistants, chat-based interviewers, and survey components into a single study flow.
+- **AI coding of open-ended responses** – dual independent AI raters, automatic agreement metrics (Cohen's kappa, Krippendorff's alpha), and reconciliation that learns from every run. We've turned this into a product: **[qualcode.ai](https://qualcode.ai)**.
+- **Behavioral data capture on the live web** – instrumenting real browsing as structured data, with domain enforcement and a built-in experiment pane, without touching a participant's own browser. This is the basis of **[labrowser.app](https://labrowser.app)**.
+- **Custom lab tooling** – including precise **sensor synchronization**, logging infrastructure, and control software that ties together robots, screens, sensors, and backends.
+
+Behind each visible system is a set of **enabling technologies**: domain models, tool APIs, simulators, and experiment logic that make studies **repeatable, adaptable, and analysable** instead of one-off prototypes.
+
+---
+
+## Expert engineering as a foundation
+
+Under everything we build is a commitment to **expert engineering**:
+
+- **Correctness and reliability** – tested components, careful treatment of edge cases, and clear contracts between systems.
+- **Performance where it matters** – from low-level Zig for performance-critical components to efficient Python backends and streaming interfaces.
+- **Reproducibility** – versioned infrastructure, experiment configurations, and data pipelines so results can be revisited and extended.
+- **Long-term maintainability** – code and systems that can be handed over to in-house teams, no black boxes.
+
+This combination of **research awareness** and **engineering discipline** allows the lab to take on projects that sit between a research prototype and a production system – exactly where many ambitious AI and HRI experiments live.
+
+---
+
+## Working with the lab
+
+We typically collaborate with:
+
+- research groups running complex online or lab experiments,
+- innovation labs exploring new forms of human-AI interaction, and
+- organisations that already have serious data and dashboards, but need an AI layer that **helps them decide and experiment**, not just chat.
+
+If you're planning a project that needs **AI agents**, **experiment platforms**, or **custom lab infrastructure**, we're happy to explore whether it's a good fit for the lab.

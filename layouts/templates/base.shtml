@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head id="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="AI Research & Technology Lab - AI decision systems, experiment platforms, and expert engineering">
+    <meta name="description" content="AI Research & Technology Lab - AI agents, experiment platforms, and expert engineering">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="AI Research & Technology Lab">
     <meta name="twitter:author" content="@renerocksai">
@@ -26,21 +26,20 @@
     <super>
   </head>
   <body>
-    <div class="page-wrap">
-      <header>
+    <header class="site-header">
+      <div class="container">
         <a href="/" class="brand">
-          <div class="brand-logo">
-            <img src="$site.asset('techlab-logo.png').link()" alt="AI Research & Technology Lab logo">
-          </div>
-          <div class="brand-text">
-            <div class="brand-name">AI Research & Technology Lab GmbH</div>
-            <div class="brand-tagline">AI Decision Systems &bull; Experiment & Lab Platforms &bull; Expert Engineering</div>
-          </div>
+          <span class="brand-logo">
+            <img src="$site.asset('techlab-logo-notext.png').link()" alt="AI Research & Technology Lab logo">
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">AI Research &amp; Technology Lab</span>
+            <span class="brand-tagline">AI Agents &bull; Lab Platforms &bull; Expert Engineering</span>
+          </span>
         </a>
-        <nav>
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link" href="$site.page('news').link()">News</a>
-          <a class="nav-link" href="$site.page('about').link()">About</a>
+        <nav class="site-nav">
+          <a class="nav-link" href="/#projects">Projects</a>
+          <a class="nav-link" href="$site.page('approach').link()">Approach</a>
           <a class="nav-link" href="$site.page('contact').link()">Contact</a>
           <a class="nav-link" href="https://github.com/technologylab-ai" target="_blank">GitHub</a>
           <button class="theme-toggle" aria-label="Toggle theme">
@@ -48,27 +47,67 @@
             <span class="theme-icon-dark">&#9790;</span>
           </button>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main id="content">
-        <super>
-      </main>
+    <main id="content">
+      <super>
+    </main>
 
-      <footer id="footer">
-        <span>&copy; AI Research & Technology Lab GmbH</span>
-        <a href="$site.page('agb').link()">AGB</a>
-        <super>
-      </footer>
-    </div>
+    <footer class="site-footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <span class="brand-logo">
+              <img src="$site.asset('techlab-logo-notext.png').link()" alt="AI Research & Technology Lab logo">
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">AI Research &amp; Technology Lab</span>
+            </span>
+          </a>
+          <p class="footer-blurb">
+            We design and build AI agents and AI-powered experiment &amp; lab platforms &ndash; plus the enabling technologies that make them reliable.
+          </p>
+          <p class="footer-founder">
+            Ready for agents? <a href="https://readyforagents.ai" target="_blank">readyforagents.ai</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="https://qualcode.ai" target="_blank">qualcode.ai</a></li>
+            <li><a href="https://labrowser.app" target="_blank">labrowser.app</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Lab</h4>
+          <ul class="footer-links">
+            <li><a href="$site.page('approach').link()">Approach</a></li>
+            <li><a href="$site.page('contact').link()">Contact</a></li>
+            <li><a href="$site.page('news').link()">Updates</a></li>
+            <li><a href="$site.page('agb').link()">AGB</a></li>
+            <li><a href="https://github.com/technologylab-ai" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; AI Research &amp; Technology Lab GmbH</span>
+        <span>No cookies &middot; Made with <a href="https://zine-ssg.io" target="_blank">Zine</a></span>
+      </div>
+      <super>
+    </footer>
 
     <script>
-      // Theme initialization (runs immediately)
+      // Theme initialization (runs immediately). Default is light:
+      // saved pref wins; otherwise dark only if the OS prefers dark.
       (function() {
         var html = document.documentElement;
         var saved = localStorage.getItem('theme');
-        if (saved) {
+        if (saved === 'dark' || saved === 'light') {
           html.setAttribute('data-theme', saved);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          html.setAttribute('data-theme', 'dark');
+        } else {
           html.setAttribute('data-theme', 'light');
         }
       })();

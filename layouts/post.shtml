@@ -5,39 +5,43 @@
   <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
 </head>
 <main id="content">
-  <section class="content-page">
-    <div class="post-header">
-      <h1 class="post-title" :text="$page.title"></h1>
-      <p class="post-byline">
-        <span :text="$page.date.format('January 02, 2006')"></span>
-        &bull;
-        <span :text="$page.wordCount().div(220).plus(1)"></span>
-        min read &bull; by
-        <strong :text="$page.author"></strong>
-        <span :if="$page.custom.get?('coauthor')">
-          and
-          <a href="$page.custom.get('coauthor_link')" target="_blank"><strong :text="$if"></strong></a>
-        </span>
-      </p>
-    </div>
-    <div class="post-content">
-      <div :if="$page.description.len().gt(0)" :html="$page.description"></div>
-      <div :if="$page.custom.has('toc')" class="toc-container">
-        <details open>
-          <summary>Table of Contents</summary>
-          <div :html="$page.toc()"></div>
-        </details>
+  <section class="band">
+    <div class="container">
+      <div class="page-head">
+        <h1 class="page-title" :text="$page.title"></h1>
+        <p class="post-byline">
+          <span :text="$page.date.format('January 02, 2006')"></span>
+          &bull;
+          <span :text="$page.wordCount().div(220).plus(1)"></span>
+          min read &bull; by
+          <strong :text="$page.author"></strong>
+          <span :if="$page.custom.get?('coauthor')">
+            and
+            <a href="$page.custom.get('coauthor_link')" target="_blank"><strong :text="$if"></strong></a>
+          </span>
+        </p>
       </div>
-      <div :html="$page.content()"></div>
-    </div>
-    <div class="post-nav">
-      <span :if="$page.prevPage?()">
-        <a href="$if.link()">&larr; <span :text="$if.title"></span></a>
-      </span>
-      <span :if="$page.hasPrev().not().and($page.hasNext().not())"></span>
-      <span :if="$page.nextPage?()">
-        <a href="$if.link()"><span :text="$if.title"></span> &rarr;</a>
-      </span>
+      <article class="prose">
+        <div :if="$page.description.len().gt(0)" :html="$page.description"></div>
+        <div :if="$page.custom.has('toc')">
+          <div class="toc-container">
+            <details open>
+              <summary>Table of Contents</summary>
+              <div :html="$page.toc()"></div>
+            </details>
+          </div>
+        </div>
+        <div :html="$page.content()"></div>
+      </article>
+      <div class="post-nav">
+        <span :if="$page.prevPage?()">
+          <a href="$if.link()">&larr; <span :text="$if.title"></span></a>
+        </span>
+        <span :if="$page.hasPrev().not().and($page.hasNext().not())"></span>
+        <span :if="$page.nextPage?()">
+          <a href="$if.link()"><span :text="$if.title"></span> &rarr;</a>
+        </span>
+      </div>
     </div>
   </section>
 </main>

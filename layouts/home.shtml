@@ -2,83 +2,55 @@
 <title id="title">Home</title>
 <head id="head"></head>
 <main id="content">
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-left">
-      <div class="hero-content">
-        <div class="hero-kicker">
-          <span class="hero-kicker-dot"></span>
-          <span :text="$page.custom.get('hero_kicker')"></span>
-        </div>
-        <h1 class="hero-title">
-          <span :text="$page.custom.get('hero_title')"></span>
-        </h1>
-        <p class="hero-intro" :html="$page.custom.get('hero_intro')"></p>
-        <p class="hero-bold" :text="$page.custom.get('hero_bold')"></p>
-        <div class="hero-actions">
-          <a href="$page.custom.get('hero_cta_primary_link')" class="btn btn-primary">
-            <span :text="$page.custom.get('hero_cta_primary')"></span>
-            <span class="arrow">&rarr;</span>
-          </a>
-          <a href="$page.custom.get('hero_cta_secondary_link')" class="btn btn-secondary">
-            <span :text="$page.custom.get('hero_cta_secondary')"></span>
-          </a>
-        </div>
+  <!-- 1. Hero -->
+  <section class="band hero">
+    <div class="container">
+      <span class="eyebrow" :text="$page.custom.get('hero_kicker')"></span>
+      <h1 class="hero-title" :text="$page.custom.get('hero_title')"></h1>
+      <p class="hero-lead" :html="$page.custom.get('hero_intro')"></p>
+      <p class="hero-bold" :text="$page.custom.get('hero_bold')"></p>
+      <div class="hero-claim">
+        <span class="eyebrow">The lab in one line</span>
+        <div class="hero-claim-text" id="hero-claim-text">Decision systems that act on your data.</div>
       </div>
-    </div>
-
-    <div class="hero-right">
-      <aside class="card-under-construction">
-        <div>
-          <div class="card-pill">
-            <span class="card-pill-dot"></span>
-            <span :text="$page.custom.get('sidebar_pill')"></span>
-          </div>
-          <p class="card-body" :text="$page.custom.get('sidebar_body_1')"></p>
-          <p class="card-body" :text="$page.custom.get('sidebar_body_2')"></p>
-        </div>
-        <div class="card-footer">
-          <a href="$page.custom.get('sidebar_cta_link')" class="btn btn-ghost" target="_blank">
-            <span :text="$page.custom.get('sidebar_cta')"></span>
-            <span class="arrow">&nearr;</span>
-          </a>
-        </div>
-      </aside>
+      <div class="hero-actions">
+        <a href="$page.custom.get('hero_cta_primary_link')" class="btn btn-primary">
+          <span :text="$page.custom.get('hero_cta_primary')"></span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="$page.custom.get('hero_cta_secondary_link')" class="btn btn-secondary">
+          <span :text="$page.custom.get('hero_cta_secondary')"></span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="section">
-    <div class="section-header">
-      <div class="section-title" :text="$page.custom.get('features_title')"></div>
-      <div class="section-subtitle" :text="$page.custom.get('features_subtitle')"></div>
-    </div>
+  <!-- 2. What the lab builds -->
+  <section class="band-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" :text="$page.custom.get('features_title')"></span>
+        <h2 class="section-title">What the lab builds</h2>
+        <p class="section-subtitle" :text="$page.custom.get('features_subtitle')"></p>
+      </div>
 
-    <div class="feature-grid">
-      <!-- Feature 1 -->
-      <article class="feature-card">
-        <div class="feature-content">
+      <div class="feature-grid">
+        <article class="feature-card">
           <div class="feature-label" :text="$page.custom.get('feature_1_label')"></div>
           <h3 class="feature-title" :text="$page.custom.get('feature_1_title')"></h3>
           <div class="feature-subtitle" :text="$page.custom.get('feature_1_subtitle')"></div>
           <p class="feature-body" :html="$page.custom.get('feature_1_body')"></p>
-        </div>
-      </article>
+        </article>
 
-      <!-- Feature 2 -->
-      <article class="feature-card">
-        <div class="feature-content">
+        <article class="feature-card">
           <div class="feature-label" :text="$page.custom.get('feature_2_label')"></div>
           <h3 class="feature-title" :text="$page.custom.get('feature_2_title')"></h3>
           <div class="feature-subtitle" :text="$page.custom.get('feature_2_subtitle')"></div>
           <p class="feature-body" :html="$page.custom.get('feature_2_body')"></p>
           <p class="feature-body" :html="$page.custom.get('feature_2_body_2')"></p>
-        </div>
-      </article>
+        </article>
 
-      <!-- Feature 3 -->
-      <article class="feature-card">
-        <div class="feature-content">
+        <article class="feature-card">
           <div class="feature-label" :text="$page.custom.get('feature_3_label')"></div>
           <h3 class="feature-title" :text="$page.custom.get('feature_3_title')"></h3>
           <div class="feature-subtitle" :text="$page.custom.get('feature_3_subtitle')"></div>
@@ -88,9 +60,146 @@
             <li :text="$page.custom.get('feature_3_list_2')"></li>
             <li :text="$page.custom.get('feature_3_list_3')"></li>
           </ul>
-        </div>
-      </article>
+        </article>
+      </div>
+      <p class="section-note">
+        Agents only pay off when the organisation around them is ready. Getting you there is what we do &ndash; see how:
+        <a href="https://readyforagents.ai" target="_blank">readyforagents.ai &rarr;</a>
+      </p>
     </div>
   </section>
+
+  <!-- 3. Projects -->
+  <section class="band" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Products</span>
+        <h2 class="section-title" :text="$page.custom.get('projects_title')"></h2>
+        <p class="section-subtitle" :text="$page.custom.get('projects_subtitle')"></p>
+      </div>
+
+      <div class="projects">
+        <article class="project-row">
+          <div class="project-media">
+            <span class="project-logo">
+              <img src="$site.asset('qualcode-icon.svg').link()" alt="qualcode.ai logo">
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name" :text="$page.custom.get('project_qualcode_name')"></h3>
+            <p class="project-tagline" :text="$page.custom.get('project_qualcode_tagline')"></p>
+            <p class="project-blurb" :text="$page.custom.get('project_qualcode_blurb')"></p>
+            <ul class="project-bullets">
+              <li :text="$page.custom.get('project_qualcode_bullet_1')"></li>
+              <li :text="$page.custom.get('project_qualcode_bullet_2')"></li>
+              <li :text="$page.custom.get('project_qualcode_bullet_3')"></li>
+              <li :text="$page.custom.get('project_qualcode_bullet_4')"></li>
+            </ul>
+            <div class="project-cta">
+              <a href="$page.custom.get('project_qualcode_url')" class="btn btn-primary" target="_blank">
+                <span :text="$page.custom.get('project_qualcode_cta')"></span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row project-row--reverse">
+          <div class="project-media">
+            <span class="project-logo">
+              <img src="$site.asset('labrowser-icon.webp').link()" alt="labrowser.app logo">
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name" :text="$page.custom.get('project_labrowser_name')"></h3>
+            <p class="project-tagline" :text="$page.custom.get('project_labrowser_tagline')"></p>
+            <p class="project-blurb" :text="$page.custom.get('project_labrowser_blurb')"></p>
+            <ul class="project-bullets">
+              <li :text="$page.custom.get('project_labrowser_bullet_1')"></li>
+              <li :text="$page.custom.get('project_labrowser_bullet_2')"></li>
+              <li :text="$page.custom.get('project_labrowser_bullet_3')"></li>
+              <li :text="$page.custom.get('project_labrowser_bullet_4')"></li>
+            </ul>
+            <div class="project-cta">
+              <a href="$page.custom.get('project_labrowser_url')" class="btn btn-primary" target="_blank">
+                <span :text="$page.custom.get('project_labrowser_cta')"></span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Latest updates -->
+  <section class="band-alt" id="updates">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Updates</span>
+        <h2 class="section-title" :text="$page.custom.get('updates_title')"></h2>
+        <p class="section-subtitle" :text="$page.custom.get('updates_subtitle')"></p>
+      </div>
+
+      <div :if="$site.page('news').subpages().empty.not()">
+        <ul class="updates-list">
+          <li :loop="$site.page('news').subpages()" class="update-item">
+            <a href="$loop.it.link()">
+              <span class="update-title" :text="$loop.it.title"></span>
+              <span class="update-date" :text="$loop.it.date.format('Jan 02, 2006')"></span>
+            </a>
+          </li>
+        </ul>
+        <div class="updates-foot">
+          <a href="$site.page('news').link()">All updates &rarr;</a>
+        </div>
+      </div>
+
+      <div :if="$site.page('news').subpages().empty">
+        <div class="empty-state">
+          <p>More updates soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Closing CTA -->
+  <section class="band-dark cta">
+    <div class="container">
+      <h2 class="cta-title">Work with the lab</h2>
+      <p class="cta-text">
+        Planning an AI decision system, an experiment platform, or custom lab infrastructure? Let's explore whether it's a fit.
+      </p>
+      <div class="cta-actions">
+        <a href="/contact/" class="btn btn-primary">
+          Contact the lab
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="/approach/" class="btn btn-secondary">Our approach</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      var el = document.getElementById('hero-claim-text');
+      if (!el) return;
+      var claims = [
+        'Decision systems that act on your data.',
+        'Experiment platforms researchers actually run.',
+        'Engineering rigor, from firmware to frontend.',
+        'Two products shipping: qualcode.ai & labrowser.app.'
+      ];
+      var i = 0;
+      setInterval(function() {
+        i = (i + 1) % claims.length;
+        el.style.opacity = '0';
+        setTimeout(function() {
+          el.textContent = claims[i];
+          el.style.opacity = '1';
+        }, 400);
+      }, 3800);
+    })();
+  </script>
 </main>
 <footer id="footer"></footer>

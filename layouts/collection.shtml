@@ -1,21 +1,28 @@
 <extend template="base.shtml">
 <title id="title" :text="$page.title"></title>
-<head id="head">
-  <link type="text/css" rel="stylesheet" href="$site.asset('term-highlight.css').link()">
-</head>
+<head id="head"></head>
 <main id="content">
-  <section class="content-page">
-    <div class="page-header">
-      <h1 class="page-title" :text="$page.title"></h1>
-    </div>
-    <div class="page-content">
-      <div :html="$page.content()"></div>
-      <div class="collection-grid">
-        <div :loop="$page.subpages()">
-          <a href="$loop.it.link()" class="collection-item">
-            <h3 :text="$loop.it.title"></h3>
-            <div class="meta" :text="$loop.it.date.format('January 02, 2006')"></div>
-          </a>
+  <section class="band">
+    <div class="container">
+      <div class="page-head">
+        <h1 class="page-title" :text="$page.title"></h1>
+      </div>
+      <article class="prose" :html="$page.content()"></article>
+
+      <div :if="$page.subpages().empty.not()">
+        <ul class="updates-list">
+          <li :loop="$page.subpages()" class="update-item">
+            <a href="$loop.it.link()">
+              <span class="update-title" :text="$loop.it.title"></span>
+              <span class="update-date" :text="$loop.it.date.format('January 02, 2006')"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div :if="$page.subpages().empty">
+        <div class="empty-state">
+          <p>More updates soon.</p>
         </div>
       </div>
     </div>
