@@ -8,11 +8,6 @@
       <span class="eyebrow" :text="$page.custom.get('hero_kicker')"></span>
       <h1 class="hero-title" :text="$page.custom.get('hero_title')"></h1>
       <p class="hero-lead" :html="$page.custom.get('hero_intro')"></p>
-      <p class="hero-bold" :text="$page.custom.get('hero_bold')"></p>
-      <div class="hero-claim">
-        <span class="eyebrow">The lab in one line</span>
-        <div class="hero-claim-text" id="hero-claim-text">Decision systems that act on your data.</div>
-      </div>
       <div class="hero-actions">
         <a href="$page.custom.get('hero_cta_primary_link')" class="btn btn-primary">
           <span :text="$page.custom.get('hero_cta_primary')"></span>
@@ -189,27 +184,5 @@
       </div>
     </div>
   </section>
-
-  <script>
-    (function() {
-      var el = document.getElementById('hero-claim-text');
-      if (!el) return;
-      var claims = [
-        'Decision systems that act on your data.',
-        'Experiment platforms researchers actually run.',
-        'Engineering rigor, from firmware to frontend.',
-        'Two products shipping: qualcode.ai & labrowser.app.'
-      ];
-      var i = 0;
-      setInterval(function() {
-        i = (i + 1) % claims.length;
-        el.style.opacity = '0';
-        setTimeout(function() {
-          el.textContent = claims[i];
-          el.style.opacity = '1';
-        }, 400);
-      }, 3800);
-    })();
-  </script>
 </main>
 <footer id="footer"></footer>
