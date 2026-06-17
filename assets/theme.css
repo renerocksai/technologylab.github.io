@@ -590,7 +590,7 @@ main {
 
 .project-row {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
   border: 1px solid var(--border);
@@ -600,7 +600,7 @@ main {
 }
 
 .project-row--reverse {
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-row--reverse .project-media {
@@ -610,6 +610,17 @@ main {
 .project-media {
   display: flex;
   justify-content: center;
+}
+
+.project-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--bg-alt);
+  object-fit: cover;
 }
 
 .project-logo {

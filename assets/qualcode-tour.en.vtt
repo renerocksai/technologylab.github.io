@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00.000 --> 00:09.100
+Qualcode turns open-ended survey responses into analysis-ready coded evidence while researchers stay in control at every step.
+
+00:09.750 --> 00:16.768
+Upload CSV and Excel files. Select the text column, then the project is ready for coding.
+
+00:17.418 --> 00:25.475
+Define the coding categories: create them manually, import an existing codebook, or let AI suggest categories from the responses.
+
+00:26.125 --> 00:36.198
+For new topics, suggest coding categories. Pick the response column, then Qualcode drafts editable categories for researcher approval.
+
+00:36.848 --> 00:48.604
+Already have a codebook? Import CSV or Excel files. Qualcode supports flat or hierarchical structure, and can enrich sparse descriptions with AI.
+
+00:49.254 --> 00:59.254
+Configure the run: choose the text column, optional ID column, coding guide, model tier, and review settings before starting.
+
+00:59.904 --> 01:10.054
+During the run you see queue status, progress, ETA, and both raters. Low-confidence items are flagged so researchers can review what matters.
+
+01:10.704 --> 01:41.704
+Qualcode does not paste customer data into a consumer chat window. Each response is evaluated in isolation, in its own API call. There is no shared chat history, and no cross-response context. Two independent AI raters review the same answer separately. Agreement gives you confidence. Disagreement gives you evidence for targeted researcher review. That is the difference between quick AI help and an audit-ready coding workflow.
+
+01:42.754 --> 01:54.054
+Results show coded rows, agreement rate, Cohen's kappa, Krippendorff's alpha, per-category reliability, and the rater evidence for each response.
+
+01:54.704 --> 02:03.513
+Reconcile disagreements and low-confidence items. AI accelerates coding while researcher judgment stays visible and editable.
+
+02:04.163 --> 02:14.913
+Every reconciliation can become a training sample. Final decisions are not lost after export. They make the next coding run sharper, while the researcher remains the source of truth.
+
+02:15.463 --> 02:25.963
+Export CSV or Excel files with the audit trail. Keep final codes, rater evidence, agreement metrics, and review decisions together for analysis.
+
+02:26.663 --> 02:33.563
+Start coding free with Qualcode. Coding you can cite, with 500 free credits when you sign up.
