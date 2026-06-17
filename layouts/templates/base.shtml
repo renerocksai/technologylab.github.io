@@ -7,7 +7,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="AI Research & Technology Lab">
     <meta name="twitter:author" content="@renerocksai">
-    <meta name="twitter:description" content="AI Research & Technology Lab - AI systems that turn data and ideas into decisions and experiments">
+    <meta name="twitter:description" content="AI Research & Technology Lab - research-grade systems that turn data into decisions and ideas into controlled experiments">
     <meta name="twitter:title" content="$page.title.suffix(' | technologylab.ai')">
     <meta name="twitter:image" content="$site.host_url.addPath($site.asset('techlab-logo-notext.png').link())">
     <meta property="og:type" content="website">
@@ -34,7 +34,7 @@
           </span>
           <span class="brand-text">
             <span class="brand-name">AI Research &amp; Technology Lab</span>
-            <span class="brand-tagline">AI Agents &bull; Lab Platforms &bull; Expert Engineering</span>
+            <span class="brand-tagline">AI Agents &bull; Experiment Platforms &bull; Expert Engineering</span>
           </span>
         </a>
         <nav class="site-nav">
@@ -66,7 +66,7 @@
             </span>
           </a>
           <p class="footer-blurb">
-            We design and build AI agents and AI-powered experiment &amp; lab platforms &ndash; plus the enabling technologies that make them reliable.
+            We design and build AI agents, experiment &amp; lab platforms, and the enabling technologies that make them reliable.
           </p>
           <p class="footer-founder">
             Ready for agents? <a href="https://readyforagents.ai" target="_blank">readyforagents.ai</a>

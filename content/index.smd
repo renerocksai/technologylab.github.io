@@ -6,7 +6,7 @@
 .draft = false,
 .custom = {
     "hero_kicker": "AI agents • Experiment platforms • Expert engineering",
-    "hero_title": "Research-grade systems that turn data into decisions and ideas into experiments.",
+    "hero_title": "Research-grade systems that turn data into decisions and ideas into controlled experiments.",
     "hero_intro": "We design and build them end-to-end for <strong>research institutes and companies</strong> – to research-grade standards, so they hold up in real studies and real decisions, not just a demo.",
     "hero_cta_primary": "Contact the lab",
     "hero_cta_primary_link": "/contact/",
