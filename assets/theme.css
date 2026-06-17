@@ -609,7 +609,15 @@ main {
 
 .project-media {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.project-video-note {
+  margin: 10px 0 0;
+  font-size: 0.8125rem;
+  color: var(--fg-muted);
+  text-align: center;
 }
 
 .project-video {
