@@ -67,7 +67,7 @@ The home page is **data-driven**: nearly all copy lives in `content/index.smd`'s
 
 ## Design system (`assets/theme.css`)
 
-Flat, **editorial** style modeled on the qualcode.ai landing page — slate neutrals + a single azure/indigo blue accent. Rules: **borders, not shadows; no gradients; no glow overlays.** CSS custom properties with a `[data-theme]` light/dark switch; **default is light** (`<html data-theme="light">`, and the inline init script in `base.shtml` picks saved pref → OS dark → light).
+Flat, **editorial** style modeled on the qualcode.ai landing page — slate neutrals + a single azure/indigo blue accent. Rules: **borders, not shadows; no gradients; no glow overlays.** CSS custom properties with a `[data-theme]` light/dark switch; **default is light** (`<html data-theme="light">`; the init script in `base.shtml` switches to dark **only** when the user has explicitly toggled it, persisted in localStorage). The OS `prefers-color-scheme` is intentionally **ignored** — light is always the default unless the user opts into dark.
 
 - Accent: `--blue-600` (light) / `--blue-400` (dark). Neutrals: Tailwind slate scale.
 - Layout is **full-bleed bands**: `.band` / `.band-alt` (alternating bg, 1px `border-block`) and `.band-dark` (inverted closing CTA), each wrapping an inner `.container` (max-width 1100px). There is **no** page-width wrapper.
@@ -115,4 +115,4 @@ zine --port 1991 &   # then curl http://localhost:1991/ to confirm it's up
   --no-sandbox --hide-scrollbars --window-size=1280,2700 \
   --screenshot=/tmp/out.png http://localhost:1991/
 ```
-Use **old** `--headless` (not `--headless=new`, which can hang on repeated invocations) and wrap calls in `timeout 30`. To preview dark mode, temporarily flip the init-script fallback in `base.shtml` to `'dark'`, screenshot, then revert (headless Chrome has no saved theme and won't honor a forced `prefers-color-scheme`).
+Use **old** `--headless` (not `--headless=new`, which can hang on repeated invocations) and wrap calls in `timeout 30`. To preview dark mode, temporarily set `<html data-theme="dark">` in `base.shtml` (with no saved pref the init script leaves it as-is), screenshot, then revert. Headless Chrome has no saved theme, so the site otherwise always renders light.

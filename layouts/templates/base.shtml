@@ -98,17 +98,13 @@
     </footer>
 
     <script>
-      // Theme initialization (runs immediately). Default is light:
-      // saved pref wins; otherwise dark only if the OS prefers dark.
+      // Theme initialization (runs immediately). Light is always the default;
+      // only an explicit user toggle (persisted in localStorage) switches to dark.
+      // The OS prefers-color-scheme is intentionally NOT used.
       (function() {
-        var html = document.documentElement;
         var saved = localStorage.getItem('theme');
         if (saved === 'dark' || saved === 'light') {
-          html.setAttribute('data-theme', saved);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          html.setAttribute('data-theme', 'dark');
-        } else {
-          html.setAttribute('data-theme', 'light');
+          document.documentElement.setAttribute('data-theme', saved);
         }
       })();
 
